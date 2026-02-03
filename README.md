@@ -5,7 +5,7 @@ utilizando **dados fictícios**, **PySpark para processamento** e **PostgreSQL c
 
 ---
 
-###  Objetivo do Projeto
+**Objetivo do Projeto**
 
 Demonstrar, de forma prática, como funciona um pipeline de dados bancário do ponto de vista de **engenharia de dados**:
 
@@ -19,7 +19,7 @@ O projeto tem foco em **arquitetura, organização e lógica de negócio**, e n�
 
 ---
 
-### Tecnologias Utilizadas
+**Tecnologias Utilizadas**
 
 - Python 3.10.19
 - PySpark 4.1.1
@@ -27,32 +27,34 @@ O projeto tem foco em **arquitetura, organização e lógica de negócio**, e n�
 
 ---
 
-### Tabelas Existentes no Projeto
+<p align="center"><strong>Tabelas Existentes no Projeto</strong></p>
 
 <p align="center">
-  <img src="docs/pipeline_modelagem.png" alt="Modelagem" width="800"/>
+  <img src="docs/modelagem.png" alt="Modelagem" width="800"/>
 </p>
+<p align="center"> <sub>Figura 1 – Modelagem com todas as tabelas que compõe o projeto</sub></p>
 
 ---
 
-### Arquitetura do Pipeline
+<p align="center"><strong>Arquitetura do Pipeline</strong></p>
 
 <p align="center">
   <img src="docs/pipeline_bancario.png" alt="Arquitetura do Pipeline Bancário" width="800"/>
 </p>
+<p align="center"><sub>Figura 2 – Arquitetura do pipeline bancário (Bronze, Silver e Gold).</sub></p>
 
 ---
 
-### Camadas de Dados
+**Camadas de Dados**
 
-#### Bronze
+**Bronze**
 - Dados gerados em arquivos CSV
 - Estrutura imutável (append-only)
 - Representa a ingestão inicial de dados bancários
 
 Esta camada simula um **Data Lake bancário**.
 
-#### Silver
+**Silver**
 - Transformações realizadas com **PySpark**
 - Aplicação de regras de negócio
 - Padronização de colunas
@@ -61,7 +63,7 @@ Esta camada simula um **Data Lake bancário**.
 
 Camada de dados confiáveis, pronta para modelagem analítica.
 
-#### Gold — Analytics
+**Gold — Analytics**
 - Dados modelados para consumo
 - Carregamento no **PostgreSQL**
 
@@ -69,7 +71,7 @@ Esta camada representa um **Data Warehouse analítico bancário**.
 
 ---
 
-### Conceitos Demonstrados
+**Conceitos Demonstrados**
 
 - Arquitetura em camadas (Bronze, Silver, Gold)
 - Processamento distribuído com PySpark
@@ -78,7 +80,7 @@ Esta camada representa um **Data Warehouse analítico bancário**.
 
 ---
 
-### Como Executar o Projeto (Resumo)
+**Como Executar o Projeto (Resumo)**
 
 1. Gerar os dados fictícios em CSV
 2. Executar o processamento com PySpark (Bronze → Silver)
@@ -88,7 +90,7 @@ Esta camada representa um **Data Warehouse analítico bancário**.
 
 ---
 
-## Observações Importantes
+**Observações Importantes**
 
 - Todos os dados utilizados são **fictícios**
 - O PostgreSQL é utilizado como **simulação de um Data Warehouse**
@@ -97,7 +99,7 @@ Esta camada representa um **Data Warehouse analítico bancário**.
 
 ---
 
-## 👤 Autor 
+**👤 Autor**
 André Silva
 
 Projeto desenvolvido para fins de estudos.
